@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lista Redirecionamento</title>
+<style>
+a {
+   color: blueviolet;
+}
+
+a:visited {
+  color: orange;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: yellow;
+}
+
+body {
+ background-color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 1em; 
+  text-indent: -.7em;
+}
+
+li::before {
+  content: "• ";
+  color: purple; 
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="https://www.google.com" target="_blank">Google</a></li> 
+<li><a href="https://www.wikipedia.org/" target="_self">Wikipedia</a></li> 
+<li><a href="https://www.cia.gov/index.html" target="_top">CIA</a></li>
+<li><a href="https://www.twitch.tv" target="_parent">Twitch</a></li>
+</ul>
+</body>
+</html>
